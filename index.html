@@ -1,0 +1,39 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+</head>
+<body>
+    <div id = "main">
+        <header class = "vegtop">Don't forget to eat your veggies!</header>
+
+        <div class = "directions">Directions for the game</div>
+
+        <div class = "vegconfetti">
+            <img class = "vegpic" href = "#" alt = "vegetables">
+        </div>
+
+        <div class = "game">
+            <div class = "currentword">
+                <h2>Current Word: <span id = "current"></span></h2>
+            </div>
+            <div class = "guesses">
+                <h3>Guesses Remaining: <span id = "guessNumber"></span></h3>
+                <h3>Letters Guessed: <span id = "guesses"></span></h3>
+
+            </div>
+            <div class = "score">
+                <h3>Wins: <span id = "win"></span></h3>
+                <h3>Losses: <span id = "loss"></span></h3>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
