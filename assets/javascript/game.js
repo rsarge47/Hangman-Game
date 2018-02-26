@@ -22,6 +22,7 @@ var blanks = function(){
     return empty;
 }
 
+// updates current word
 var showWord = function(){
     var partWord = empty.join(" ");
     document.getElementById("current").innerHTML = partWord;
@@ -36,6 +37,7 @@ var showGuesses = function(){
 var updateGuessNum = function(){
     document.getElementById("guessNumber").innerHTML = guessNum;
 }    
+
 window.onload = updateGuessNum(), blanks(), showWord();
 
 var newCompGuess = function(){
@@ -43,7 +45,7 @@ var newCompGuess = function(){
 }
 // resets data for next round
 var nextRound = function(){
-    guessNum = 10;
+    guessNum = 12;
     guessedLetters = [];
     updateGuessNum();
     showGuesses();
@@ -92,7 +94,7 @@ document.onkeyup = function(blammo){
         if (rngWord === empty.join("")){
             wins++
             document.getElementById("win").innerHTML = wins;
-            alert("You won this round, Congratulations!");
+            alert(rngWord + " is correct, Congratulations!");
             nextRound();
         }
         // sets loss when all guesses are used
